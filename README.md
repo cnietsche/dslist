@@ -67,8 +67,28 @@ Immersion follow-up project presented by devsuperior: https://github.com/devsupe
 
 &emsp;A DTO file for the **Game** entity to allow the service and controller to find the game records in a restricted model (the **findAll** method will only return some of the table fields).
 
+### Day 2
 
+**1. Domain model**
 
+&emsp;Created the entities **Belonging.java** and **GameList.java**.
 
+&emsp;Created the PK through the **BelongingPK.java** class, generating the relationship between the entities.
 
+**2. Find game by ID**
 
+&emsp;New endpoint create to make possible to get a game by its Id code.
+
+**3. GameList: Repository, Service, Controller and DTO**
+
+&emsp;Created the REST Controller for the GameList entity and created the Service and Repository for it.
+
+**4. Custom QUERY for the GameRepository.java**
+
+&emsp;Created a custom query that obtains the games from a list Id code.
+
+&emsp;Created a projection from the query.
+
+&emsp;Created the method at the **GameService.java** class that runs the query.
+
+&emsp;Added a new endpoint at the **GameListController.java** that executes the new method declared at the **GameService.java** class.
